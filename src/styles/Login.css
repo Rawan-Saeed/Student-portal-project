@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.login-page {
+  background-color: #b893dd !important;
+  width: 100%;
+  height: 100vh;
+  /* overflow-x: hidden !important; */
+  /* overflow-y: hidden !important; */
+}
+.login-container {
+  /* width: 100%; */
+  height: 100vh;
+  color: white;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.login-container .login {
+  width: 30rem;
+  height: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.3);
+  padding: 2rem 0;
+}
+.kind {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 2rem;
+  gap: 0.5rem;
+  font-weight: 500;
+  width: 90% !important;
+}
+.labelWithInput {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  font-weight: 500;
+}
+.radio_inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.login_title {
+  text-align: center;
+}
+.input_label {
+  width: 90% !important;
+}
+.login_input {
+  width: 90% !important;
+}
+
+.login-container .login .Title p {
+  position: absolute;
+  top: 40px;
+}
+.login-container .login .inputs {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  position: relative;
+  margin-top: 20px;
+}
+
+.login-container .login .inputs input {
+  width: 70%;
+  height: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.login-container .login .inputs a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+.login-container .login .inputs h4 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.login-container .login .button {
+  margin-top: 30px;
+  width: 70%;
+  height: 40px;
+  background-color: #a984d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.login-container .login .button:hover {
+  background-color: #9979cb;
+  transition: ease all 600ms;
+}
+
+.login-container .logo p {
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.login_logo {
+  width: 400px;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .login-page {
+    height: 120vh;
+  }
+  .login-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .kind {
+    width: 20rem;
+    margin-left: 2rem;
+  }
+  .labelWithInput {
+    width: 22.5rem;
+  }
+  .login-container .login {
+    width: 400px;
+  }
+  .login-container .login .Title {
+    position: fixed;
+    top: 20px;
+  }
+  .login-container .logo {
+    flex: 1;
+    order: -2;
+    margin-top: 15rem;
+    height: 300px; /* تغيير ترتيب العنصر .logo ليظهر فوق .login */
+  }
+  .login_logo {
+    width: 300px;
+    border-radius: 50%;
+  }
+}
+.required{
+  color: red;
+  font-size: 1.2rem;
+}

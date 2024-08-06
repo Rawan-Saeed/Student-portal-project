@@ -1,0 +1,86 @@
+.studentInfoPage {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 2rem;
+  background-color: beige;
+}
+.backgroundImg_info {
+  display: flex;
+  justify-content: center;
+}
+.studentInfo {
+  width: 95%;
+  height: 15rem;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.profile_photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.profile_info {
+  position: absolute;
+  left: 6rem;
+  bottom: 13rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.infoo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  left: 20rem;
+  bottom: 16rem;
+}
+.single-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin-top: 10rem;
+}
+.single-details .det {
+  height: auto;
+  padding: 10px;
+  width: 35%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-det {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 15px;
+  span{
+font-size: 1.1rem;
+color: gray;
+  }
+}
+
+.single-det i {
+  font-size: 20px;
+  margin-left: 20px;
+  // margin-top: -8px;
+}
